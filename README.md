@@ -13,8 +13,8 @@ Filters are changed to 18.
 Training
 ```
 darknet.exe detector train data/obj.data cfg/yolov4-rat.cfg yolov4.conv.137 -map
-![chart](https://user-images.githubusercontent.com/97471111/149238345-d36fabf0-e9de-4160-8b7c-7eba8ca33b25.png)
 ```
+![chart](https://user-images.githubusercontent.com/97471111/149238345-d36fabf0-e9de-4160-8b7c-7eba8ca33b25.png)
 
 Run on a video
 ```
