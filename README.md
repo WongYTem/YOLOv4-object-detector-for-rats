@@ -17,10 +17,9 @@ LabelImg: https://github.com/tzutalin/labelImg
 
 Darknet from [AlexeyAB GitHub](https://github.com/AlexeyAB/darknet)
 
+## Training
 The yolov4-rat.cfg, obj.data, and obj.names files are edited for 1 class detection(rat). 
 Filters are changed to 18. 
-
-Training
 ```
 darknet.exe detector train data/obj.data cfg/yolov4-rat.cfg yolov4.conv.137 -map
 ```
