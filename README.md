@@ -6,14 +6,16 @@
 This model is trained with about 950 images containing closeup and distanced images of rats. 
 ## System Information
 
-CUDA 10.1
-OpenCV >= 4.1
-cuDNN =8.0.5 for CUDA 10.1
-Visual Studio 2019
-CMake >= 3.12
+- CUDA 10.1
+- cuDNN =8.0.5 for CUDA 10.1
+- OpenCV >= 4.1
+- Visual Studio 2019
+- CMake >= 3.12
 
 To label the images, I used lablelImg to create .txt files for Yolo.
 LabelImg: https://github.com/tzutalin/labelImg
+
+Darknet from [AlexeyAB GitHub](https://github.com/AlexeyAB/darknet)
 
 The yolov4-rat.cfg, obj.data, and obj.names files are edited for 1 class detection(rat). 
 Filters are changed to 18. 
@@ -30,6 +32,3 @@ darknet.exe detector demo data/obj.data cfg/yolov4-custom.cfg ../training/yolov4
 ```
 ![New 3 (2)](https://user-images.githubusercontent.com/97471111/149241278-d89116c1-58af-49f3-b431-6f15e3540b01.gif)
 
-
-# Reference
-AlexeyAB GitHub
